@@ -32,3 +32,14 @@ Tlv_Length_Type
 0x02 - chunked
 ```
 
+File meta is JSON format, sample
+```
+{
+  "userAgent": "tiny_encrypt_rs/1.0 macos"
+  "envelops": [
+    { "format": "", "id": "", "fingerprint": "", "envelop": "" }
+  ]
+}
+```
+
+
