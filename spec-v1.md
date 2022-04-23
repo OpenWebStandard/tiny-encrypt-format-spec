@@ -11,7 +11,7 @@ Tlv_Tag         ::= 2bytes[BE]
 Tlv_Length_Type ::= 1byte
 Tlv_Length      ::= 4bytes[BE]
 Tlv_Body        ::= Tlv_Length bytes binary | Chunks
-Chunks          ::= Chunk_Body | Chunk_End
+Chunks          ::= Chunk_Body* | Chunk_End
 Chunk_Body      ::= 4bytes[BE] bytes
 Chunk_End       ::= 0x00000000
 ```
