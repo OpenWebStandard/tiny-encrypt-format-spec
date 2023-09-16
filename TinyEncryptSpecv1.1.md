@@ -14,7 +14,7 @@ Meta format:
 | Field               | Type      | Comment                                      |
 |---------------------|-----------|----------------------------------------------|
 | version             | String    | Constant value: `1.1`                        |
-| created             | Long      | Created time, Unix Epoch                     |
+| created             | Long      | Created time, Unix Epoch in millis           |
 | userAgent           | String    | User Agent, e.g. `TinyEncrypt v0.5.1@MacOS`  |
 | comment             | String    | `optional` Plain text comment                |
 | encryptedComment    | String    | `optional` Encrypted comment                 |
@@ -30,7 +30,7 @@ Meta format:
 | encryptionAlgorithm | String    | `optional` Default `AES/GCM`                 |
 | nonce               | String    | `base64` GCM Nonce                           |
 | fileLength          | Long      | File Length                                  |
-| fileLastModified    | Long      | File Last Modified, Unix Epoch               |
+| fileLastModified    | Long      | File Last Modified, Unix Epoch in millis     |
 | compress            | Boolean   | Compressed or Not, GZIP if `true`            |
 
 Envelop format:
