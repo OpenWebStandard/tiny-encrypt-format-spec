@@ -3,7 +3,7 @@ File extension: `*.tinyenc`
 File format deail:
 
 ```text
-[TAG; 2 bytes; u16; BE; 1 or 1]
+[TAG; 2 bytes; u16; BE; 1 or 2]
 [LENGTH; 4 bytes; u32; BE; Length of meta data]
 [META DATA; LENGTH bytes]
 [ENCRYPTED_DATA; n bytes; AES/GCM]
